@@ -73,7 +73,7 @@
                 <artifactId>wildfly-swarm-plugin</artifactId>
                 <version>${version.wildfly.swarm}</version>
                 <configuration>
-                    <mainClass>com.solvians.swarm-demo.Main</mainClass>
+                    <mainClass>net.struwi.swarmswaggerdemo.Main</mainClass>
                     <bundleDependencies>false</bundleDependencies>
                 </configuration>
                 <executions>
