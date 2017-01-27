@@ -13,6 +13,7 @@ public class Main {
         ClassLoader cl = Main.class.getClassLoader();
         JAXRSArchive archive = ShrinkWrap.create(JAXRSArchive.class, "swarm-demo.war")
                 .addAsWebInfResource(new ClassLoaderAsset("beans.xml", cl), "beans.xml")
+                .addAsWebInfResource(new ClassLoaderAsset("META-INF/persistence.xml", cl), "classes/META-INF/persistence.xml")
                 .addPackages(true, "net.struwi.swarmswaggerdemo")
                 .addAllDependencies();
         swarm.deploy(archive);
